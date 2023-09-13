@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\IndexController; //access indexcontroller script
+use App\Http\Controllers\ListingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'index']);//routes for class methods(method and function name )
 Route::get('/hello', [IndexController::class, 'show']);
+
+Route::resource('listing', ListingController::class)->only(['index', 'show']); //link to listing controller script 
