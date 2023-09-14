@@ -1,14 +1,20 @@
 <template>
  <div v-for="listing in listings" :key="listing.id"> <!--loop through array objects and display cities unique id-->
-      <Link :href="`/listing/${listing.id}`">
-          {{listing.street}}  {{listing.street_nr}},  {{listing.city}}, for  {{listing.price}} 
-      </Link>
+   <div>
+          <Link :href="`/listing/${listing.id}`">
+             <ListingAddress :listing="listing"/>
+          </Link>
+   </div>
+   <div>
+         <Link :href = "`/listing/${listing.id}/edit`">Edit</Link> <!--edit link for listing-->
+   </div>
     
  </div>
 </template>
 
 <script setup>
   import {Link} from '@inertiajs/vue3'
+  import ListingAddress from '@/Components/ListingAddress.vue'
    defineProps({
      listings: Array, 
    })
