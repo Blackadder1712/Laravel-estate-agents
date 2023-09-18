@@ -85,14 +85,9 @@ const form = useForm({
   street_nr: null,
   price: 0,
 })
-const create = () => {
-    form.post('/listing', {
-        onSuccess: () => router.replace('/listing'),
-        onError: (errors) => {
-            form.errors = errors
-        },
-    })
-}
+const create = () => 
+    form.post(route(listing.store))
+
 </script>
 
 <style scoped>

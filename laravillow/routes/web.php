@@ -20,4 +20,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [IndexController::class, 'index']);//routes for class methods(method and function name )
 Route::get('/hello', [IndexController::class, 'show']);
 
-Route::resource('listing', ListingController::class)->except(['destroy']); //link to listing controller script
+Route::resource('listing', ListingController::class); //link to listing controller script

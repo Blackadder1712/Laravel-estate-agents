@@ -66,7 +66,7 @@
       </div>
 
       <div>
-        <button type="submit">Create</button>
+        <button type="submit">Edit</button>
       </div>
     </div>
   </form>
@@ -89,7 +89,7 @@ const form = useForm({
   price: props.listing.price,
 })
 const update = () => 
-    form.put(`/listing/${props.listing.id}`)
+    form.put(route('listing.update', {listing: props.listing.id}))
 
 </script>
 
