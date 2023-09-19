@@ -6,11 +6,11 @@
       <div class="text-lg font-medium">
         <Link :href="route('listing.index')">Listings</Link> <!--button to listing page-->
       </div> <!--buttons at top-->
-      <div class="text-xl text-indigo-600 dark:text-indigo-250 font-bold text-center">
+      <div class="text-xl text-indigo-600 dark:text-indigo-400 font-bold text-center">
         <Link :href = "route('listing.index')">LaraVillow</Link>
       </div>
       <div>
-        <Link :href = "route('listing.create')" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium p-2 rouded-md">Create Listing</Link> <!--make into button-->
+        <Link :href = "route('listing.create')" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium p-2 rouded-md dark:bg-indigo-500 hover:bg-indigo-400">Create Listing</Link> <!--make into button-->
       </div>
       
     </nav>
