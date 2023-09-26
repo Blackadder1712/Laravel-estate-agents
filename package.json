@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",
+    "stylelint-config-recommended": "^13.0.0",
     "vue": "^3.3.4"
   },
   "dependencies": {
