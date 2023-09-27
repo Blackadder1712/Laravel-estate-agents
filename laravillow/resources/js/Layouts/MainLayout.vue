@@ -10,7 +10,7 @@
         <Link :href = "route('listing.index')">Amy's LaraVillow</Link>
       </div>
       <div>
-        <Link :href = "route('listing.create')" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium p-2 rounded-md dark:bg-indigo-500 hover:bg-indigo-400">Create Listing</Link> <!--make into button-->
+        <Link :href = "route('listing.create')" class="btn-primary">Create Listing</Link> <!--make into button-->
       </div>
       
     </nav>
